@@ -1,12 +1,27 @@
 <template>
   <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </div>
-    <router-view/>
+    <footer-bar v-show="$route.meta.footerShow"></footer-bar>
+    <!-- 缓存页面 -->
+    <keep-alive>
+    <router-view></router-view>
+    </keep-alive>
   </div>
 </template>
+<script>
+import FooterBar from '@/components/FooterBar.vue'
+export default {
+  name: 'App',
+  components:{
+    FooterBar
+  },
+  data(){
+    return{
+
+    }
+  }
+}
+</script>
+
 
 <style lang="scss">
 #app {

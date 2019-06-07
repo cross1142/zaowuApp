@@ -11,7 +11,7 @@
         <div class="banner">
             <ul class="banner-nav">
                 <li><a @click="bannerImgs = imgs1" href="javascript:;">推荐</a></li>
-                <li><a @click="bannerImgs = imgs2" href="javascript:;">活动</a></li>
+                <li><a @click="bannerImgs = imgs2" href="javascript:;">活霍霍霍霍动</a></li>
                 <li><a @click="bannerImgs = imgs3" href="javascript:;">品牌</a></li>
                 <li><a @click="bannerImgs = imgs4" href="javascript:;">定制</a></li>
             </ul>
